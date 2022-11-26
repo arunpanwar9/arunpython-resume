@@ -1,0 +1,24 @@
+{% load static %}
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+<!-- ================================
+Start Footer
+================================= -->
+
+<footer class='footer'>
+    <div class="footerCol ">
+    <div class="container ">
+        <ul class="socialCol">
+        <li><a href="javascript:void(0)"><img src="{% static 'images/fb.svg' %}" alt="..."></a></li>
+        <li><a href="javascript:void(0)"><img src="{% static 'images/insta.svg' %}" alt="..."></a></li>
+        <li><a href="javascript:void(0)"><img src="{% static 'images/twitter.svg' %}" alt="..."></a></li>
+        <li><a href="javascript:void(0)"><img src="{% static 'images/linkedin.svg' %}" alt="..."></a></li>
+        </ul>
+        <div class="copyrightCol">
+        <p >Copyright ©{% now 'Y' %} All rights reserved. Designed by Arun Panwar <a href="https://arunpanwars.netlify.app" target="_blank" > <button onclick="functionToExecute()" class= 'btn-primary'><b>Visit my Restaurant Website</button> </a></p>
+        </div>
+    </div>
+    </div>
+</footer>
+<!-- ================================
+End Footer
+================================= -->

@@ -24,7 +24,6 @@ from django.views.static import serve
 
 
 urlpatterns = [
-    #path('jet/', include('jet.urls', 'jet')),
     path('admin/', admin.site.urls),
     path('', include('main.urls', namespace="main")),
     re_path(r'^media/(?P<path>.*)$', serve,

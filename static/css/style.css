@@ -785,7 +785,6 @@ input[type=text], input[type=email], select, textarea {
   background:rgb(120, 111, 111);
 }
 
-
 .contact{
   padding:5rem 0;
   background:rgb(226, 226, 226);
@@ -846,4 +845,5 @@ input[type=text], input[type=email], select, textarea {
  .form-container a{
   font-size:1.4rem;
  }
+ 
  

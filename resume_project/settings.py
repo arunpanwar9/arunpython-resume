@@ -27,7 +27,7 @@ SECRET_KEY= 'django-insecure-2*6k+zk0ltod*vw-=ni84+_*$kac!)tk(^r&)i3cyy@q0*m7ib'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh', '127.0.0.1']
 
 
 # Application definition
@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'resume_project.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-""" 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -85,7 +85,7 @@ DATABASES = {
     }
 }
 
- """
+ 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
@@ -128,7 +128,7 @@ USE_TZ = True
 #]
 
 STATIC_URL = '/static/'
-#STATIC_ROOT = BASE_DIR / "static"
+STATIC_ROOT = BASE_DIR / "static"
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
@@ -138,5 +138,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+#STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
+#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
